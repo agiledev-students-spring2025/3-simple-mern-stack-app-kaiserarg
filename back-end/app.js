@@ -78,5 +78,29 @@ app.post('/messages/save', async (req, res) => {
   }
 })
 
+//aboutus route for bio and my own image
+app.get('/aboutus', async (req, res) => {
+  try {
+      res.json({
+        about: [
+          "Hi, I'm Brad Huang, I'm a senior Computer Science student studying at NYU College of Arts and Science.",
+          "I play the electric guitar and I'm a big fan of John Mayer.",
+          "My favorite sports right now are UFC and Formula 1.",
+          "I also own a Yellow-Headed Amazon parrot named Coco.",
+          "I'm also an avid Wikipedia/history buff especially regarding Vexillology or the study of flags."
+        ],
+        imageurl: "https://i.imgur.com/gQtZESL.jpeg",
+        name: "Brad Huang",
+        status: 'all good',
+      })
+  } catch (err) {
+    console.error(err)
+    res.status(400).json({
+      error: err,
+      status: 'failed to retrieve bio and image',
+    })
+  }
+})
+
 // export the express app we created to make it available to other modules
 module.exports = app // CommonJS export style!

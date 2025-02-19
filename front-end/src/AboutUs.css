@@ -1,28 +1,25 @@
 #about-us-title {
     font-size: 2.5em;
-    color: #333;
+    color: black;
     text-align: center;
 }
 
 #about-us-name {
     font-size: 2em;
-    color: #555;
+    color: black;
     text-align: center;
 }
 
 #about-us-description {
     font-size: 1.2em;
-    color: #666;
+    color: black;
     text-align: justify;
     margin: 20px auto;
-    width: 80%;
+    width: 50%;
 }
 
 #about-us-image {
-    display: block;
-    margin: 20px auto;
-    min-width: 50%;
+    width: 50%;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
 }

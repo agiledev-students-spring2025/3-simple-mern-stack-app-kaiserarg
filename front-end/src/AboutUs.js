@@ -34,7 +34,6 @@ const AboutUs = () => {
 
     return (
         <div>
-            <h1 id="about-us-title">About Us</h1>
             <h1 id="about-us-name">{name}</h1>
             <p id="about-us-description">{description}</p>
             <img id="about-us-image" src={imageUrl} alt={name} />
